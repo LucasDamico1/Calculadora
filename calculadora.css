@@ -1,0 +1,62 @@
+/*Remove as margens e espaçamentos padrões de todos os elementos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    /*Background: Adiciona o fundo ao HTML*/
+    background: #833AB4;
+    /*Background-image: utiliza-se para adicionar imagem ao fundo de um elemento HTML, aqui, no caso, uma cor em gradiente*/
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    /*Height: definição de altura de um elemento do HTML*/
+    height: 100vh;
+    /*Color: Como o próprio nome diz, se refere às definições de cores e decorações do texto em um determinado elemento que compõe ou a página total do HTML*/
+    color: black;
+    /*Font-family: Utilizado para especificar e aplicar uma família de fontes à um elemento do HTML, como a fonte courrier new*/
+    font-family: 'Courier New', Courier, monospace;
+    /*Text-align: Se refere ao alinhamento do texto*/
+    text-align: center;
+}
+.corpoCalc{
+    margin-top: 2%;/*Define as dimensões da margem superior, conforme estruturas de caixas que compõe os elementos HTML na página*/
+    position: absolute;/*Define como o elemento será posicionado dentro do documento HTML*/
+    background-color: black;/*a: transparência de 0 à 1*/
+    top: 50%;/*É uma propriedade que define a posição vertical de um elemento, o deslocando para cima de sua posição*/
+    left: 50%;/*Se trata do atributo pelo qual é possivel definir a posição horizontal do elemento em relação à sua borda esquerda*/
+    transform: translate(-50%, -50%);/*Atributo faz com que a calculadora fique perfeitamente posicionada no centro da tela*/
+    border-radius: 15px;/*Elemento que permite se definir o raio dos cantos arredondados  de um elemento*/
+    padding: 15px;/*Se refere ao espaçamento interno de um elemento, ou seja, a distância entre o conteúdo do elemento e a sua borda*/
+}
+.botao{
+    width: 50px;/*A propriedade que define a largura da área de conteúdo de um elemento*/
+    height: 50px;
+    font-size: 25px;/*Se refere ao tamanho da fonte*/
+    cursor: pointer;/*Indica que o elemento pelo qual o cursor passa é clicável*/
+    margin: 3px;
+    background-color: rgb(158, 156, 156);/*Se refere à cor de fundo*/
+    border: none;
+    color: white;
+}
+.botao:hover{
+    background-color: black;
+}
+#resultado{
+    background-color: #d2f4e6;
+    width: 215px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Define a largura como 100% da tela */
+    height: 50px; /* Ajuste a altura conforme a necessidade */
+    background-color: #f2f2f2; /* Define uma cor de fundo para o título fixo */
+    padding: 10px; /* Adiciona um espaço interno para o título */
+    z-index: 1000; /* Garante que o título esteja acima de outros elementos */
+}
